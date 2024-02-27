@@ -11,3 +11,20 @@
     padding: 20px;
   }
   
+
+.root {
+  border: solid 2px green;
+  width: 100%;
+
+  .wrapper {
+    border: solid 2px blue;
+
+    .image {
+      border: solid 2px red;
+    }
+
+    .content {
+      border: solid 2px purple;
+    }
+  }
+}

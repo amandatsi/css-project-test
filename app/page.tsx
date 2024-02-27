@@ -1,20 +1,24 @@
 import React from 'react';
 import Article from './components/Article/Article';
-import Text from './components/Text/Text';
+import Text from './elements/Text/Text';
 import { promises as fs } from 'fs';
 
 
 export default async function HomePage() {
-  const file = await fs.readFile(process.cwd() + '/app/articleModuleData.json', 'utf8');
-  const data = JSON.parse(file);
-  const articleModuleData = data[0];
-  const textModuleData = data[1];
+  const file = await fs.readFile(process.cwd() + '/app/pageData.json', 'utf8');
+  const pageData = JSON.parse(file);
+  const articleData = pageData[0];
+  const textData = pageData[1];
+  const galleryData = pageData[1];
+
 
 
   return (
       <div className="p-10">
-        <Article imageSrc={articleModuleData.imageSrc} text={articleModuleData.text}/>
-        <Text />
+        {/* <Article data={articleData} /> */}
+        {/* <Text data={textData} /> */}
+        {/* <Gallery data={galleryData} /> */}
+        <Article imageSrc={articleData.imageSrc} text={articleData.text}/>
       </div>
   );
 };

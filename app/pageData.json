@@ -1,13 +1,19 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "module_type": "article",
         "imageSrc": "2ASP5507.jpg",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer. Arcu non sodales neque sodales ut etiam sit. Bibendum ut tristique et egestas quis."
+        "image": "https://townsquareinteractive.s3.amazonaws.com/amanda/2ASP5507.jpg",
+        "text": "This is the article main content, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer. Arcu non sodales neque sodales ut etiam sit. Bibendum ut tristique et egestas quis."
+    },
+    {
+        "id": 1,
+        "module_type": "text",
+        "text": "This is the new text content for the text module type. You can place any additional information, descriptions, or other text-based content here. This module is designed to complement the existing article module by providing textual content that can be formatted and structured as needed to fit the overall design and informational goals of the presentation or document it's part of."
     },
     {
         "id": 2,
-        "module_type": "text",
-        "text": "This is the new text content for the text module type. You can place any additional information, descriptions, or other text-based content here. This module is designed to complement the existing article module by providing textual content that can be formatted and structured as needed to fit the overall design and informational goals of the presentation or document it's part of."
+        "module_type": "gallery",
+        "images" : []
     }
 ]
