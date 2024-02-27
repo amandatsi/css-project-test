@@ -17,7 +17,9 @@ const Article: React.FC<ArticleProps> = ({imageSrc, text}) => {
     return (
         <div className={styles.articleModule}>
             <img src={imageSrc} alt="Article" className={styles.image} />
+            <div>HEADER</div>
             <div className={styles.text}>{text}</div>
+            <div>LINK</div>
         </div>
     );
 };
