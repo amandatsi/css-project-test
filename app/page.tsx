@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './components/Article';
+import JuanArticle from './components/JuanArticle/Article';
 import Text from './components/Text';
 import { promises as fs } from 'fs';
 
@@ -10,10 +11,15 @@ export default async function HomePage() {
 
 
   return (
-    <div className="p-10">
-      <Article imageSrc={articleModuleData.imageSrc} text={articleModuleData.text}/>
-      <Text />
-    </div>
+    <>
+      <JuanArticle data={articleModuleData} />
+
+      <div className="p-10">
+        <Article imageSrc={articleModuleData.imageSrc} text={articleModuleData.text}/>
+        <Text />
+      </div>
+
+    </>
   );
 };
 
