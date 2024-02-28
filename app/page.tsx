@@ -9,7 +9,7 @@ export default async function HomePage() {
   const pageData = JSON.parse(file);
   const articleData = pageData[0];
   const textData = pageData[1];
-  const galleryData = pageData[1];
+  const galleryData = pageData[2];
 
 
 
@@ -18,7 +18,7 @@ export default async function HomePage() {
         {/* <Article data={articleData} /> */}
         {/* <Text data={textData} /> */}
         {/* <Gallery data={galleryData} /> */}
-        <Article imageSrc={articleData.imageSrc} text={articleData.text}/>
+        <Article />
       </div>
   );
 };

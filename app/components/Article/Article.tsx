@@ -1,32 +1,31 @@
 import React from 'react';
 import Image from 'next/image'
+import Container from '../../elements/Container/Container'
+import Wrapper from '../../elements/Wrapper/Wrapper'
+import Content from '../../elements/Content/Content'
+import Header from '../../elements/Header/Header'
+import Text from '../../elements/Text/Text'
+import Button from '../../elements/Button/Button'
 import styles from './Article.module.scss';
+import image from '../../../public/2ASP5507.jpg'
+
 
 interface ArticleProps {
-    imageSrc: string;
-    text: string;
 }
 
-const Article: React.FC<ArticleProps> = ({imageSrc, text}) => {
-    // const articleModuleData =
-    // {
-    //     id: 1,
-    //     module_type: "article",
-    //     imageSrc: "2ASP5507.jpg",
-    //     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer. Arcu non sodales neque sodales ut etiam sit. Bibendum ut tristique et egestas quis. Facilisis volutpat est velit egestas dui. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Elit duis tristique sollicitudin nibh sit amet. Venenatis urna cursus eget nunc scelerisque viverra. Dignissim cras tincidunt lobortis feugiat vivamus. Amet nulla facilisi morbi tempus. Augue neque gravida in fermentum et sollicitudin ac orci. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Lectus urna duis convallis convallis tellus id interdum. Vulputate eu scelerisque felis imperdiet proin fermentum leo. In dictum non consectetur a erat nam at lectus urna. A erat nam at lectus urna duis convallis convallis. Egestas integer eget aliquet nibh praesent tristique. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Nullam vehicula ipsum a arcu cursus."
-    // };
+const Article: React.FC<ArticleProps> = ({ }) => {
     return (
         <>
-            <div className={styles.articleModule}>
+            {/* <div className={styles.articleModule}>
                 <img src={imageSrc} alt="Article" className={styles.image} />
                 <div>HEADER</div>
                 <div className={styles.text}>{text}</div>
                 <div>LINK</div>
-            </div>
+            </div> */}
 
-            <div className={styles.root}>
-                <div className={styles.wrapper}>
-                        
+            <Container>
+                <Wrapper>
+
                     <div className={styles.image}>
                         <Image
                             src={image}
@@ -36,17 +35,16 @@ const Article: React.FC<ArticleProps> = ({imageSrc, text}) => {
                         />
                     </div>
 
-                    <div className={styles.content}>
+                    <Content>
+                        <Header />
+                        <Text />
+                        <Button> LINK HERE </Button>
 
-                        <div className={styles.header}>HEADER</div>
-                        <div className={styles.text}>ACTUALT ARTICLE TEXT</div>
-                        <div className={styles.link}>LINK</div>
-                        
-                    </div>
-                    
+                    </Content>
 
-                </div>
-            </div>
+
+                </Wrapper>
+            </Container>
         </>
     );
 };
