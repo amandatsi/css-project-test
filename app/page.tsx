@@ -14,12 +14,12 @@ export default async function HomePage() {
 
 
   return (
-      <div className="p-10">
+      <>
         {/* <Article data={articleData} /> */}
         {/* <Text data={textData} /> */}
         {/* <Gallery data={galleryData} /> */}
         <Article />
-      </div>
+      </>
   );
 };
 
