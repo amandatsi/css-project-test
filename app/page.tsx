@@ -18,7 +18,7 @@ export default async function HomePage() {
         {/* <Article data={articleData} /> */}
         {/* <Text data={textData} /> */}
         {/* <Gallery data={galleryData} /> */}
-        <Article />
+        <Article data={articleData} />  
       </>
   );
 };

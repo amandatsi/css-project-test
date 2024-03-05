@@ -4,6 +4,8 @@
         "module_type": "article",
         "imageSrc": "2ASP5507.jpg",
         "image": "https://townsquareinteractive.s3.amazonaws.com/amanda/2ASP5507.jpg",
+        "headline": "This is My Data Headline",
+        "subheadline": "This is a Data Subheadline",
         "text": "This is the article main content, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer. Arcu non sodales neque sodales ut etiam sit. Bibendum ut tristique et egestas quis."
     },
     {

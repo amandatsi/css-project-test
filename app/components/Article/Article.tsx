@@ -1,45 +1,43 @@
 import React from 'react';
 import Image from 'next/image'
-import Container from '../../elements/Container/Container'
-import Wrapper from '../../elements/Wrapper/Wrapper'
-// import Content from '../../elements/Content/Content'
-import Header from '../../elements/Header/Header'
+import Header from '../Header/Header'
 import Text from '../../elements/Text/Text'
-import Button from '../../elements/Button/Button'
+import Link from 'next/link';
 import styles from './Article.module.scss';
-import image from '../../../public/2ASP5507.jpg'
+// import image from '../../../public/2ASP5507.jpg'
 
 
-interface ArticleProps {
+interface ArticleData {
+    image?: string;
+    headline?: string;
+    subheadline?: string;
+    text?: string;
 }
 
-const Article: React.FC<ArticleProps> = ({ }) => {
+interface ArticleProps {
+    data: ArticleData;
+}
+
+const Article: React.FC<ArticleProps> = ({ data }) => {
     return (
         <>
-            {/* <div className={styles.articleModule}>
-                <img src={imageSrc} alt="Article" className={styles.image} />
-                <div>HEADER</div>
-                <div className={styles.text}>{text}</div>
-                <div>LINK</div>
-            </div> */}
-
             <div className={styles.root}>
                 <div className={styles.wrapper}>
 
                     <div className={styles.image}>
-                        {image && <Image
-                            src={image}
+                        {data.image && <Image
+                            src={data.image}
                             width={500}
-                            height={500}
+                            height={1026}
                             alt="Picture of the author"
                         />}
                     </div>
 
                     <div className={styles.content}>
-                        <Header />
-                        <Text>This is the text coming from the main component</Text>
-                        <Text>And here I have another text element just for testing</Text>
-                        <Button> LINK HERE </Button>
+                        <Header headline={data.headline || ''} subheadline={data.subheadline || ''} />
+                        <Text text={data.text || ''} />
+                        <Text text={data.text || ''} />
+                        <div className="bg-slate-900"><Link href="#">I am a Link</Link></div>
                     </div>
 
 

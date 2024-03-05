@@ -5,8 +5,8 @@ interface TextProps {
     text: string;
 }
 
-const Text: React.FC<TextProps> = ({children}) => {
-        return <div className={styles.root}>{children}</div>;
+const Text: React.FC<TextProps> = ({text}) => {
+        return <div className={styles.root}><p>{text}</p></div>;
 };
 
 export default Text;

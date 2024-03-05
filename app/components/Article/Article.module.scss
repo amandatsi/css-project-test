@@ -2,18 +2,15 @@
 
 
 .articleModule {
-    display: flex;
-    align-items: center;
-  }
-  
-  .image {
-    max-width: 25%;
-  }
-  
-  .text {
-    padding: 20px;
-  }
-  
+  display: flex;
+  align-items: center;
+}
+
+
+.text {
+  padding: 20px;
+}
+
 
 .root {
   border: solid 2px green;
@@ -24,32 +21,68 @@
     display: flex;
     flex-direction: column;
 
-		@include sm {
-			width: 80%;
-			max-width: 1026;
-			margin: 0 auto;
-			padding: 0px;
-			flex-direction: row;
-		}
+    @include md {
+      width: 80%;
+      max-width: 1026;
+      margin: 0 auto;
+      padding: 0px;
+      flex-direction: row;
+    }
 
     .image {
+      margin: auto;
+      max-width: 100%;
       border: solid 2px red;
+
+      @include sm {
+        max-width: 50%;
+      }
+
+      @include md {
+        max-width: 100%;
+      }
     }
 
     .content {
       border: solid 2px purple;
       display: flex;
       flex-direction: column;
-      padding: 0 2rem;
-      
+      padding: 1rem 2rem;
+      margin: auto;
+
       @include sm {
-        background-color: azure;
-        padding: 0 4rem;
+        padding: 1rem;
+        width: 80%;
+
       }
 
-      @include lg {
-        background-color:floralwhite;
-        padding: 6rem;
+      @include md {
+        padding: 2rem 2rem;
+        width: 100%;
+
+      }
+
+      @include xl {
+        padding: 4rem 3rem;
+
+      }
+
+      @include xxl {
+        padding: 6rem 3rem;
+
+      }
+
+      p {
+        font-size: 10px;
+
+        @include md {
+          font-size: 0.8rem;
+        }
+
+        @include xl {
+          font-size: 1rem;
+        }
+
       }
 
     }
