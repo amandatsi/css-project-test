@@ -31,16 +31,16 @@
 
     .image {
       margin: auto;
-      max-width: 100%;
+      width: 100%;
       border: solid 2px red;
 
-      @include sm {
-        max-width: 50%;
-      }
+      // @include sm {
+      //   max-width: 50%;
+      // }
 
-      @include md {
-        max-width: 100%;
-      }
+      // @include md {
+      //   max-width: 100%;
+      // }
     }
 
     .content {
@@ -52,7 +52,6 @@
 
       @include sm {
         padding: 1rem;
-        width: 80%;
 
       }
 
@@ -75,7 +74,7 @@
       p {
         font-size: 10px;
 
-        @include md {
+        @include lg {
           font-size: 0.8rem;
         }
 

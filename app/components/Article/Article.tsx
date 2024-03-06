@@ -25,12 +25,16 @@ const Article: React.FC<ArticleProps> = ({ data }) => {
                 <div className={styles.wrapper}>
 
                     <div className={styles.image}>
+                        <div className="">
                         {data.image && <Image
                             src={data.image}
                             width={500}
-                            height={1026}
+                            height={500}
+                            layout="responsive"
                             alt="Picture of the author"
+                            className='object-cover'
                         />}
+                        </div>
                     </div>
 
                     <div className={styles.content}>
