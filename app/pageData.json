@@ -17,5 +17,22 @@
         "id": 2,
         "module_type": "gallery",
         "images" : []
+    },
+    {
+        "id": 3,
+        "module_type": "article",
+        "imageSrc": "2ASP5507.jpg",
+        "image": "https://townsquareinteractive.s3.amazonaws.com/amanda/landscape-1.png",
+        "headline": "With a long image",
+        "subheadline": "Playing with images",
+        "text": "<p>The idea is making the Article module look good regardless the size of the image. Also, notice that we should be able to display HTML correctly. Ahhh!! Why we have the text rwice???</p>"
+    },
+    {
+        "id": 3,
+        "module_type": "article",
+        "imageSrc": "2ASP5507.jpg",
+        "image": "https://townsquareinteractive.s3.amazonaws.com/amanda/landscape-2.png",
+        "headline": "With a kind of regular size image",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
 ]

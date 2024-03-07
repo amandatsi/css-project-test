@@ -10,6 +10,8 @@ export default async function HomePage() {
   const articleData = pageData[0];
   const textData = pageData[1];
   const galleryData = pageData[2];
+  const article3 = pageData[3];
+  const article4 = pageData[4];
 
 
 
@@ -18,7 +20,9 @@ export default async function HomePage() {
         {/* <Article data={articleData} /> */}
         {/* <Text data={textData} /> */}
         {/* <Gallery data={galleryData} /> */}
-        <Article data={articleData} />  
+        <Article data={articleData} />
+        <Article data={article3} />
+        <Article data={article4} />
       </>
   );
 };
